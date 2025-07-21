@@ -102,8 +102,8 @@ This project is licensed under the [MIT License](LICENSE).
 
 Built and maintained by:
 - Gilbert Kukah (Lead Dev, Backend & Architecture)
-- INFOTESS Engineering Team
-- [Sefwi Wiawso Municipal Assembly](https://example.gov.gh) *(Pilot)*
+- Nolex-Prime Engineering Team
+- [Sefwi Wiawso Municipal Assembly](#) *(Pilot)*
 
 ---
 
@@ -111,6 +111,6 @@ Built and maintained by:
 
 For questions, support, or custom deployment:
 
-📧 Email: info@yourstartup.dev  
-📱 WhatsApp: +233 XXX XXX XXX  
-🌐 Website: [yourstartup.dev](https://yourstartup.dev)
+📧 Email: kwamegilbert1114@gmail.com    
+📱 WhatsApp: [+233 541 143 6414](https://wa.me/+233541436414)
+🌐 Website: [nolexprime.dev](#)
