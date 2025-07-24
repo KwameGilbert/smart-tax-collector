@@ -27,7 +27,7 @@ A robust, scalable, and secure digital platform for managing municipal tax colle
 
 ### 🔹 Roles Supported
 - **Collectors:** Capture payments, view invoices, and sync data offline
-- **Officers:** Review and approve payments, generate reports
+<!-- - **Officers:** Review and approve payments, generate reports -->
 - **IT Admins:** Manage users, system settings, backups
 - **Executives (MCE, MP, Finance):** View financial summaries and export data
 
@@ -114,3 +114,10 @@ For questions, support, or custom deployment:
 📧 Email: kwamegilbert1114@gmail.com    
 📱 WhatsApp: [+233 541 143 6414](https://wa.me/+233541436414)
 🌐 Website: [nolexprime.dev](#)
+
+
+# clone the repo
+- create your branch with your name
+- cd into your folder directory
+- for frontend type npm install to install all dependencies and npm run build to run and build all tailwind 
+- always push once you work something even a line of code
