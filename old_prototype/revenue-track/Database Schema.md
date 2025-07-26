@@ -1,5 +1,8 @@
+---
 
--- 1. Roles & User
+-- 1. Roles & Users
+
+---
 
 CREATE TABLE `users` (
 `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -13,7 +16,11 @@ CREATE TABLE `users` (
 PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+---
+
 -- 2. Businesses (Clients)
+
+---
 
 CREATE TABLE `businesses` (
 `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -30,12 +37,16 @@ CONSTRAINT `fk_business_owner` FOREIGN KEY (`owner_user_id`)
 REFERENCES `users` (`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+---
+
 -- 3. Tax Types (Configured by Finance)
+
+---
 
 CREATE TABLE `tax_types` (
 `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
 `name` VARCHAR(100) NOT NULL,
-`description` VARCHAR(255) NOT NULL,
+`purpose` VARCHAR(255) NOT NULL,
 `amount` DECIMAL(10,2) NOT NULL COMMENT 'Base amount per frequency unit',
 `frequency` ENUM('daily','weekly','monthly','quarterly','annually') NOT NULL,
 `created_by` INT UNSIGNED NOT NULL COMMENT 'Finance user who created this tax',
@@ -44,10 +55,14 @@ CREATE TABLE `tax_types` (
 PRIMARY KEY (`id`),
 INDEX (`created_by`),
 CONSTRAINT `fk_tax_created_by` FOREIGN KEY (`created_by`)
-REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+REFERENCES `users` (`id`) ON DELETE SET NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+---
+
 -- 4. Business–Tax Assignments & Rules
+
+---
 
 CREATE TABLE `business_taxes` (
 `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -65,7 +80,11 @@ CONSTRAINT `fk_bt_taxtype` FOREIGN KEY (`tax_type_id`)
 REFERENCES `tax_types` (`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+---
+
 -- 5. Payments (Collected by Collectors)
+
+---
 
 CREATE TABLE `payments` (
 `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -82,10 +101,14 @@ INDEX (`collector_id`),
 CONSTRAINT `fk_pay_bt` FOREIGN KEY (`business_tax_id`)
 REFERENCES `business_taxes` (`id`) ON DELETE CASCADE,
 CONSTRAINT `fk_pay_collector` FOREIGN KEY (`collector_id`)
-REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+REFERENCES `users` (`id`) ON DELETE SET NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+---
+
 -- 6. Notifications (Email/SMS Logs)
+
+---
 
 CREATE TABLE `notifications` (
 `id` INT UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -97,10 +120,14 @@ CREATE TABLE `notifications` (
 PRIMARY KEY (`id`),
 INDEX (`user_id`),
 CONSTRAINT `fk_note_user` FOREIGN KEY (`user_id`)
-REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+REFERENCES `users` (`id`) ON DELETE CASCADE
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+---
+
 -- 7. Audit Logs (Immutable Action Tracking)
+
+---
 
 CREATE TABLE `audit_logs` (
 `id` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -111,5 +138,5 @@ CREATE TABLE `audit_logs` (
 PRIMARY KEY (`id`),
 INDEX (`user_id`),
 CONSTRAINT `fk_audit_user` FOREIGN KEY (`user_id`)
-REFERENCES `users` (`id`) ON DELETE CASCADE ON UPDATE CASCADE
+REFERENCES `users` (`id`) ON DELETE SET NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
