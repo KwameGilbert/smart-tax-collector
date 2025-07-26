@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "build": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch",
-    "start": "php -S localhost:5000"
+    "start": "php -S localhost:5000 -t ./public"
   },
   "keywords": [],
   "author": "",
