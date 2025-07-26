@@ -311,7 +311,9 @@ function timeAgo($dateString) {
 </head>
 
 <body class="bg-gray-100 font-sans">
-    <?php require_once __DIR__ .'/../components/sidebar.php';?>
+    <?php 
+    require_once __DIR__ .'/../components/sidebar.php';12
+    ?>
 
     <!-- Main Content -->
     <main class="md:ml-64 min-h-screen">
