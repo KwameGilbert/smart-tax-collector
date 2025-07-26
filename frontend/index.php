@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sefwi Municipal Tax Collection System</title>
     <link rel="stylesheet" href="./src/output.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     
      <!-- Remix Icon -->
      <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
@@ -46,7 +48,7 @@
     <style>
       body {
         font-family: "Poppins", sans-serif;
-        background: linear-gradient(135deg, #f0fdf4 0%, #eff6ff 100%);
+        background: linear-gradient(135deg, #f0fdf4 0%, #eff6ff 50%, #F3E9F6FF 100%);
       }
 
       .card {
@@ -69,6 +71,9 @@
       .card-collector {
         background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
       }
+      .card-executives {
+        background: linear-gradient(135deg, #FAF5FDFF 10%, #F5E6F9FF 100%);
+      }
 
       .card-accent {
         height: 8px;
@@ -87,7 +92,7 @@
         left: 10%;
         width: 300px;
         height: 300px;
-        background: rgba(22, 163, 74, 0.2);
+        background: #f3d9fa;
         animation: float-slow 10s ease-in-out infinite;
       }
 
@@ -115,6 +120,14 @@
         width: 180px;
         height: 180px;
         background: rgba(139, 92, 246, 0.15);
+        animation: float-slow 9s ease-in-out infinite reverse;
+      }
+      .blob-5 {
+        top: 2%;
+        right: 5%;
+        width: 280px;
+        height: 280px;
+        background: rgba(22, 163, 74, 0.2);
         animation: float-slow 9s ease-in-out infinite reverse;
       }
 
@@ -172,6 +185,7 @@
     <div class="blob blob-2"></div>
     <div class="blob blob-3"></div>
     <div class="blob blob-4"></div>
+    <div class="blob blob-5"></div>
 
     <!-- Header -->
     <header class="py-6 px-8">
@@ -193,11 +207,11 @@
     </header>
 
     <!-- Main Content -->
-    <main class="flex-grow flex items-center justify-center px-8 py-12">
-      <div class="max-w-7xl mx-auto w-full">
+    <main class="flex-grow flex items-center justify-center px-3 md:px-8 py-12">
+      <div class="w-full">
         <div class="text-center mb-12">
           <h2
-            class="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-collector to-finance bg-clip-text text-transparent"
+            class="text-2xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-[#16a34a] to-[#2563eb] bg-clip-text text-transparent"
           >
             Welcome to Sefwi Tax Collection System
           </h2>
@@ -207,27 +221,27 @@
           </p>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div class="grid md:grid-cols-3 gap-5 w-[100%]">
           <!-- Tax Collector Card -->
           <a href="collector/login/index.php" class="card card-collector group">
             <div
-              class="card-accent bg-gradient-to-r from-collector-light to-collector"
+              class="card-accent bg-gradient-to-r from-[#22c55e] to-[#16a34a]"
             ></div>
             <div class="p-8">
               <div class="flex items-center justify-between mb-6">
                 <div
-                  class="h-16 w-16 bg-collector-light/20 rounded-full flex items-center justify-center text-collector"
+                  class="h-16 w-16 bg-[#22c55e]/20 rounded-full flex items-center justify-center text-[#16a34a]"
                 >
                   <i class="ri-user-3-line dashboard-icon"></i>
                 </div>
                 <span
-                  class="flex items-center text-collector font-medium text-lg enter-arrow"
+                  class="flex items-center text-[#16a34a] font-medium text-lg enter-arrow"
                 >
                   Enter <i class="ri-arrow-right-line ml-2"></i>
                 </span>
               </div>
               <h3
-                class="text-2xl font-semibold text-gray-800 mb-2 group-hover:text-collector transition-colors"
+                class="text-2xl font-semibold text-gray-800 mb-2 group-hover:text-[#16a34a] transition-colors"
               >
                 Tax Collector
               </h3>
@@ -237,17 +251,17 @@
               </p>
               <div class="flex flex-wrap gap-2">
                 <span
-                  class="px-3 py-1 bg-collector-light/10 text-collector rounded-full text-xs"
+                  class="px-3 py-1 bg-[#22c55e]/10 text-[#16a34a] rounded-full text-xs"
                 >
                   <i class="ri-money-dollar-box-line mr-1"></i> Collect Payments
                 </span>
                 <span
-                  class="px-3 py-1 bg-collector-light/10 text-collector rounded-full text-xs"
+                  class="px-3 py-1 bg-[#22c55e]/10 text-[#16a34a] rounded-full text-xs"
                 >
                   <i class="ri-file-list-3-line mr-1"></i> Issue Receipts
                 </span>
                 <span
-                  class="px-3 py-1 bg-collector-light/10 text-collector rounded-full text-xs"
+                  class="px-3 py-1 bg-[#22c55e]/10 text-[#16a34a] rounded-full text-xs"
                 >
                   <i class="ri-store-2-line mr-1"></i> Manage Businesses
                 </span>
@@ -256,25 +270,25 @@
           </a>
 
           <!-- Finance Department Card -->
-          <a href="finance/login/index.php" class="card card-finance group">
+          <a href="./public/finance/login/index.php" class="card card-finance group">
             <div
-              class="card-accent bg-gradient-to-r from-finance-light to-finance"
+              class="card-accent bg-gradient-to-r from-[#3b82f6] to-[#2563eb]"
             ></div>
             <div class="p-8">
               <div class="flex items-center justify-between mb-6">
                 <div
-                  class="h-16 w-16 bg-finance-light/20 rounded-full flex items-center justify-center text-finance"
+                  class="h-16 w-16 bg-[#3b82f6]/20 rounded-full flex items-center justify-center text-[#2563eb]"
                 >
                   <i class="ri-bank-line dashboard-icon"></i>
                 </div>
                 <span
-                  class="flex items-center text-finance font-medium text-lg enter-arrow"
+                  class="flex items-center text-[#2563eb] font-medium text-lg enter-arrow"
                 >
                   Enter <i class="ri-arrow-right-line ml-2"></i>
                 </span>
               </div>
               <h3
-                class="text-2xl font-semibold text-gray-800 mb-2 group-hover:text-finance transition-colors"
+                class="text-2xl font-semibold text-gray-800 mb-2 group-hover:text-[#2563eb] transition-colors"
               >
                 Finance Department
               </h3>
@@ -284,17 +298,63 @@
               </p>
               <div class="flex flex-wrap gap-2">
                 <span
-                  class="px-3 py-1 bg-finance-light/10 text-finance rounded-full text-xs"
+                  class="px-3 py-1 bg-[#3b82f6]/10 text-[#2563eb] rounded-full text-xs"
+                >
+                  <i class="ri-line-chart-line mr-1"></i> Financial Summary
+                </span>
+                <span
+                  class="px-3 py-1 bg-[#3b82f6]/10 text-[#2563eb] rounded-full text-xs"
+                >
+                  <i class="ri-file-chart-line mr-1"></i> Export Data
+                </span>
+                <span
+                  class="px-3 py-1 bg-[#3b82f6]/10 text-[#2563eb] rounded-full text-xs"
+                >
+                  <i class="ri-government-line mr-1"></i> Performance Analytics
+                </span>
+              </div>
+            </div>
+          </a>
+
+           <!-- Executives (MCE, MP, Finance) Department Card -->
+           <a href="finance/login/index.php" class="card card-executives group">
+            <div
+              class="card-accent bg-gradient-to-r from-purple-400 to-purple-500"
+            ></div>
+            <div class="p-8">
+              <div class="flex items-center justify-between mb-6">
+                <div
+                  class="h-16 w-16 bg-purple-400/20 rounded-full flex items-center justify-center text-purple-500"
+                >
+                <i class="ri-admin-line dashboard-icon"></i>
+                </div>
+                <span
+                  class="flex items-center text-purple-500 font-medium text-lg enter-arrow"
+                >
+                  Enter <i class="ri-arrow-right-line ml-2"></i>
+                </span>
+              </div>
+              <h3
+                class="text-2xl font-semibold text-gray-800 mb-2 group-hover:text-purple-500 transition-colors"
+              >
+                Executive Department
+              </h3>
+              <p class="text-gray-600 mb-6">
+              The Executive Dashboard displays key financial metrics with quick export options.
+              </p>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 bg-purple-400/10 text-purple-500 rounded-full text-xs"
                 >
                   <i class="ri-line-chart-line mr-1"></i> View Analytics
                 </span>
                 <span
-                  class="px-3 py-1 bg-finance-light/10 text-finance rounded-full text-xs"
+                  class="px-3 py-1 bg-purple-400/10 text-purple-500 rounded-full text-xs"
                 >
                   <i class="ri-file-chart-line mr-1"></i> Generate Reports
                 </span>
                 <span
-                  class="px-3 py-1 bg-finance-light/10 text-finance rounded-full text-xs"
+                  class="px-3 py-1 bg-purple-400/10 text-purple-500 rounded-full text-xs"
                 >
                   <i class="ri-government-line mr-1"></i> Manage Tax Types
                 </span>
@@ -304,7 +364,7 @@
         </div>
 
         <!-- Additional Resources -->
-        <div class="mt-16 max-w-5xl mx-auto">
+        <!-- <div class="mt-16 max-w-5xl mx-auto">
           <h3 class="text-xl font-semibold text-gray-800 mb-6 text-center">
             Additional Resources
           </h3>
@@ -354,12 +414,12 @@
               <span class="text-gray-700">Support</span>
             </a>
           </div>
-        </div>
+        </div> -->
       </div>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-white shadow-inner py-6 px-8 mt-12">
+    <footer class="bg-white shadow-inner py-3 px-8 mt-">
       <div
         class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center"
       >
