@@ -26,159 +26,159 @@ session_start();
         rel="stylesheet">
 
     <script>
-    // Custom Tailwind configuration
-    tailwind.config = {
-        theme: {
-            extend: {
-                colors: {
-                    collector: {
-                        light: '#22c55e',
-                        DEFAULT: '#16a34a',
-                        dark: '#15803d'
+        // Custom Tailwind configuration
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        collector: {
+                            light: '#22c55e',
+                            DEFAULT: '#16a34a',
+                            dark: '#15803d'
+                        },
+                        finance: {
+                            light: '#3b82f6',
+                            DEFAULT: '#2563eb',
+                            dark: '#1d4ed8'
+                        },
+                        accent: {
+                            purple: '#8b5cf6',
+                            orange: '#f59e0b',
+                            pink: '#ec4899',
+                            teal: '#14b8a6'
+                        }
                     },
-                    finance: {
-                        light: '#3b82f6',
-                        DEFAULT: '#2563eb',
-                        dark: '#1d4ed8'
-                    },
-                    accent: {
-                        purple: '#8b5cf6',
-                        orange: '#f59e0b',
-                        pink: '#ec4899',
-                        teal: '#14b8a6'
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif']
                     }
-                },
-                fontFamily: {
-                    sans: ['Poppins', 'sans-serif']
                 }
             }
-        }
-    };
+        };
     </script>
 
     <style>
-    body {
-        font-family: 'Poppins', sans-serif;
-        background: linear-gradient(135deg, #f0fdf4 0%, #eff6ff 100%);
-    }
-
-    .card {
-        transition: all 0.3s ease;
-        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-        background: white;
-        border-radius: 16px;
-        overflow: hidden;
-    }
-
-    .card:hover {
-        transform: translateY(-10px);
-        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
-    }
-
-    .card-finance {
-        background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
-    }
-
-    .card-collector {
-        background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
-    }
-
-    .card-accent {
-        height: 8px;
-    }
-
-    .blob {
-        position: absolute;
-        z-index: -1;
-        border-radius: 50%;
-        filter: blur(40px);
-        opacity: 0.6;
-    }
-
-    .blob-1 {
-        top: 10%;
-        left: 10%;
-        width: 300px;
-        height: 300px;
-        background: rgba(22, 163, 74, 0.2);
-        animation: float-slow 10s ease-in-out infinite;
-    }
-
-    .blob-2 {
-        bottom: 10%;
-        right: 10%;
-        width: 250px;
-        height: 250px;
-        background: rgba(37, 99, 235, 0.2);
-        animation: float-slow 12s ease-in-out infinite reverse;
-    }
-
-    .blob-3 {
-        top: 50%;
-        right: 20%;
-        width: 200px;
-        height: 200px;
-        background: rgba(245, 158, 11, 0.15);
-        animation: float-slow 8s ease-in-out infinite;
-    }
-
-    .blob-4 {
-        bottom: 20%;
-        left: 15%;
-        width: 180px;
-        height: 180px;
-        background: rgba(139, 92, 246, 0.15);
-        animation: float-slow 9s ease-in-out infinite reverse;
-    }
-
-    @keyframes float-slow {
-
-        0%,
-        100% {
-            transform: translate(0, 0);
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #f0fdf4 0%, #eff6ff 100%);
         }
 
-        50% {
-            transform: translate(10px, 15px);
+        .card {
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            background: white;
+            border-radius: 16px;
+            overflow: hidden;
         }
-    }
 
-    .dashboard-icon {
-        font-size: 2.5rem;
-        transform-origin: center;
-        transition: all 0.3s ease;
-    }
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
 
-    .card:hover .dashboard-icon {
-        transform: scale(1.2);
-    }
+        .card-finance {
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+        }
 
-    .enter-arrow {
-        transition: all 0.3s ease;
-        opacity: 0;
-        transform: translateX(-10px);
-    }
+        .card-collector {
+            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+        }
 
-    .card:hover .enter-arrow {
-        opacity: 1;
-        transform: translateX(0);
-    }
+        .card-accent {
+            height: 8px;
+        }
 
-    .pulse {
-        animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-    }
+        .blob {
+            position: absolute;
+            z-index: -1;
+            border-radius: 50%;
+            filter: blur(40px);
+            opacity: 0.6;
+        }
 
-    @keyframes pulse {
+        .blob-1 {
+            top: 10%;
+            left: 10%;
+            width: 300px;
+            height: 300px;
+            background: rgba(22, 163, 74, 0.2);
+            animation: float-slow 10s ease-in-out infinite;
+        }
 
-        0%,
-        100% {
+        .blob-2 {
+            bottom: 10%;
+            right: 10%;
+            width: 250px;
+            height: 250px;
+            background: rgba(37, 99, 235, 0.2);
+            animation: float-slow 12s ease-in-out infinite reverse;
+        }
+
+        .blob-3 {
+            top: 50%;
+            right: 20%;
+            width: 200px;
+            height: 200px;
+            background: rgba(245, 158, 11, 0.15);
+            animation: float-slow 8s ease-in-out infinite;
+        }
+
+        .blob-4 {
+            bottom: 20%;
+            left: 15%;
+            width: 180px;
+            height: 180px;
+            background: rgba(139, 92, 246, 0.15);
+            animation: float-slow 9s ease-in-out infinite reverse;
+        }
+
+        @keyframes float-slow {
+
+            0%,
+            100% {
+                transform: translate(0, 0);
+            }
+
+            50% {
+                transform: translate(10px, 15px);
+            }
+        }
+
+        .dashboard-icon {
+            font-size: 2.5rem;
+            transform-origin: center;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover .dashboard-icon {
+            transform: scale(1.2);
+        }
+
+        .enter-arrow {
+            transition: all 0.3s ease;
+            opacity: 0;
+            transform: translateX(-10px);
+        }
+
+        .card:hover .enter-arrow {
             opacity: 1;
+            transform: translateX(0);
         }
 
-        50% {
-            opacity: 0.7;
+        .pulse {
+            animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
         }
-    }
+
+        @keyframes pulse {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.7;
+            }
+        }
     </style>
 </head>
 
@@ -369,18 +369,18 @@ session_start();
     </footer>
 
     <script>
-    // Simple animation for the blobs to make them more dynamic
-    document.addEventListener('mousemove', function(e) {
-        const blobs = document.querySelectorAll('.blob');
-        const mouseX = e.clientX / window.innerWidth;
-        const mouseY = e.clientY / window.innerHeight;
+        // Simple animation for the blobs to make them more dynamic
+        document.addEventListener('mousemove', function(e) {
+            const blobs = document.querySelectorAll('.blob');
+            const mouseX = e.clientX / window.innerWidth;
+            const mouseY = e.clientY / window.innerHeight;
 
-        blobs.forEach((blob, index) => {
-            const offsetX = (mouseX - 0.5) * (10 + index * 5);
-            const offsetY = (mouseY - 0.5) * (10 + index * 5);
-            blob.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+            blobs.forEach((blob, index) => {
+                const offsetX = (mouseX - 0.5) * (10 + index * 5);
+                const offsetY = (mouseY - 0.5) * (10 + index * 5);
+                blob.style.transform = `translate(${offsetX}px, ${offsetY}px)`;
+            });
         });
-    });
     </script>
 </body>
 
