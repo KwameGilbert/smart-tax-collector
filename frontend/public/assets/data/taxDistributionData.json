@@ -1,0 +1,4 @@
+{
+  "labels": ["Income Tax", "Property Tax", "Business Tax", "Import Tax", "Luxury Tax"],
+  "data": [30.5, 2, 30, 15, 9.5]
+}

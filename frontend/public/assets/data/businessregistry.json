@@ -1,0 +1,152 @@
+[
+  {
+    "id": 1,
+    "name": "Adwoa Grocery Shop",
+    "owner_name": "Adwoa Mensah",
+    "contact": "0244123456",
+    "location": "Central Market, Sefwi",
+    "business_type": "Retail",
+    "registration_date": "2023-03-15",
+    "status": "active"
+  },
+  {
+    "id": 2,
+    "name": "Kofi Auto Repairs",
+    "owner_name": "Kofi Agyemang",
+    "contact": "0201234567",
+    "location": "Mechanic Lane, Sefwi",
+    "business_type": "Service",
+    "registration_date": "2023-05-20",
+    "status": "active"
+  },
+  {
+    "id": 3,
+    "name": "Afia Restaurant",
+    "owner_name": "Afia Boateng",
+    "contact": "0277654321",
+    "location": "High Street, Sefwi",
+    "business_type": "Food & Beverage",
+    "registration_date": "2022-11-10",
+    "status": "active"
+  },
+  {
+    "id": 4,
+    "name": "Kwame Building Materials",
+    "owner_name": "Kwame Owusu",
+    "contact": "0234567890",
+    "location": "Industrial Area, Sefwi",
+    "business_type": "Construction",
+    "registration_date": "2023-01-25",
+    "status": "inactive"
+  },
+  {
+    "id": 5,
+    "name": "Ama Fashion Boutique",
+    "owner_name": "Ama Darkwa",
+    "contact": "0257891234",
+    "location": "Shopping Mall, Sefwi",
+    "business_type": "Retail",
+    "registration_date": "2022-08-12",
+    "status": "active"
+  },
+  {
+    "id": 6,
+    "name": "Yaw Digital Studio",
+    "owner_name": "Yaw Addo",
+    "contact": "0268123456",
+    "location": "Kwabena Junction, Sefwi",
+    "business_type": "Creative",
+    "registration_date": "2023-04-02",
+    "status": "active"
+  },
+  {
+    "id": 7,
+    "name": "Akua Bookshop",
+    "owner_name": "Akua Serwaa",
+    "contact": "0503216549",
+    "location": "Town Library Road, Sefwi",
+    "business_type": "Retail",
+    "registration_date": "2023-02-18",
+    "status": "active"
+  },
+  {
+    "id": 8,
+    "name": "Kojo Transport Services",
+    "owner_name": "Kojo Amankwah",
+    "contact": "0551122334",
+    "location": "Lorry Station, Sefwi",
+    "business_type": "Transport",
+    "registration_date": "2022-10-05",
+    "status": "inactive"
+  },
+  {
+    "id": 9,
+    "name": "Esi's Catering",
+    "owner_name": "Esi Nyarko",
+    "contact": "0547893210",
+    "location": "Brewery Road, Sefwi",
+    "business_type": "Food & Beverage",
+    "registration_date": "2023-06-01",
+    "status": "active"
+  },
+  {
+    "id": 10,
+    "name": "Nana Furniture Works",
+    "owner_name": "Nana Yeboah",
+    "contact": "0241987654",
+    "location": "Timber Market, Sefwi",
+    "business_type": "Manufacturing",
+    "registration_date": "2023-03-22",
+    "status": "active"
+  },
+  {
+    "id": 11,
+    "name": "Serwaa Events",
+    "owner_name": "Serwaa Dede",
+    "contact": "0204765893",
+    "location": "East End, Sefwi",
+    "business_type": "Service",
+    "registration_date": "2022-07-11",
+    "status": "active"
+  },
+  {
+    "id": 12,
+    "name": "Mensah IT Hub",
+    "owner_name": "Michael Mensah",
+    "contact": "0279123456",
+    "location": "Tech Street, Sefwi",
+    "business_type": "Technology",
+    "registration_date": "2023-01-10",
+    "status": "inactive"
+  },
+  {
+    "id": 13,
+    "name": "Linda Herbal Centre",
+    "owner_name": "Linda Asamoah",
+    "contact": "0236549871",
+    "location": "Opposite Police Station, Sefwi",
+    "business_type": "Health",
+    "registration_date": "2022-12-15",
+    "status": "active"
+  },
+  {
+    "id": 14,
+    "name": "Daniel Cold Store",
+    "owner_name": "Daniel Appiah",
+    "contact": "0247543126",
+    "location": "Fish Market, Sefwi",
+    "business_type": "Food & Beverage",
+    "registration_date": "2023-05-05",
+    "status": "active"
+  },
+  {
+    "id": 15,
+    "name": "Sarpong Electronics",
+    "owner_name": "Yaw Sarpong",
+    "contact": "0567891234",
+    "location": "New Town, Sefwi",
+    "business_type": "Retail",
+    "registration_date": "2023-04-17",
+    "status": "inactive"
+  }
+]
