@@ -16,7 +16,7 @@ const FinanceHeader = () => {
 
         {/* profile */}
         <div>
-          <ProfileDropdown/>
+          <ProfileDropdown />
         </div>
       </div>
     </header>

@@ -1,0 +1,22 @@
+{
+  "cards": [
+    {
+      "title": "Today's Collection",
+      "amount": "GHS 1,850.00",
+      "progress": 93,
+      "transactions": "12 transactions — Target: GHS 2,000.00"
+    },
+    {
+      "title": "This Week's Collection",
+      "amount": "GHS 8,750.00",
+      "progress": 88,
+      "transactions": "56 transactions — Target: GHS 10,000.00"
+    },
+    {
+      "title": "Businesses Visited Today",
+      "amount": "18",
+      "progress": 85,
+      "transactions": "12 collections made — 6 pending"
+    }
+  ]
+}
