@@ -39,7 +39,7 @@ export default function Home() {
       {/* Dashboard Options */}
       <div className="grid md:grid-cols-3 gap-5 w-[96%] mx-auto">
         {/* Tax Collector Card */}
-        <Link to="/tax-collector">
+        <Link to="/collector">
           <div className="bg-green-50 border-t-8 border-green-500 px-6 py-8 rounded-lg shadow-md">
             <div class="flex items-center justify-between mb-6">
               <div class="h-16 w-16 bg-[#22c55e]/20 rounded-full flex items-center justify-center text-[#16a34a]">

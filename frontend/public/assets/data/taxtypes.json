@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Business Operating Permit",
+    "count": 68,
+    "amount": 14600
+  },
+  {
+    "name": "Market Stall Fee",
+    "count": 65,
+    "amount": 6500
+  },
+  {
+    "name": "Signage/Advertising",
+    "count": 42,
+    "amount": 6300
+  },
+  {
+    "name": "Food & Beverage License",
+    "count": 30,
+    "amount": 4500
+  }
+]

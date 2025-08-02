@@ -1,0 +1,82 @@
+[
+  {
+    "id": "RCPT-00123",
+    "business_name": "Kofi Electronics",
+    "tax_type": "Property Tax",
+    "amount": 500.0,
+    "date": "2025-07-31T10:30:00",
+    "payment_method": "Cash"
+  },
+  {
+    "id": "RCPT-00124",
+    "business_name": "Ama Ventures",
+    "tax_type": "Business Operating Permit",
+    "amount": 850.0,
+    "date": "2025-07-31T12:00:00",
+    "payment_method": "Mobile Money"
+  },
+  {
+    "id": "RCPT-00125",
+    "business_name": "Blessing Bakery",
+    "tax_type": "VAT",
+    "amount": 320.0,
+    "date": "2025-07-30T09:00:00",
+    "payment_method": "Card"
+  },
+  {
+    "id": "RCPT-00126",
+    "business_name": "Divine Grocery",
+    "tax_type": "Environmental Tax",
+    "amount": 400.0,
+    "date": "2025-07-29T14:15:00",
+    "payment_method": "Cash"
+  },
+  {
+    "id": "RCPT-00127",
+    "business_name": "Akosua Fashion",
+    "tax_type": "Property Tax",
+    "amount": 950.0,
+    "date": "2025-07-29T17:45:00",
+    "payment_method": "Mobile Money"
+  },
+  {
+    "id": "RCPT-00128",
+    "business_name": "Yaw's Furniture",
+    "tax_type": "Business Operating Permit",
+    "amount": 700.0,
+    "date": "2025-07-28T11:30:00",
+    "payment_method": "Card"
+  },
+  {
+    "id": "RCPT-00129",
+    "business_name": "Glory Bookshop",
+    "tax_type": "VAT",
+    "amount": 390.0,
+    "date": "2025-07-28T13:00:00",
+    "payment_method": "Cash"
+  },
+  {
+    "id": "RCPT-00130",
+    "business_name": "Asante Rentals",
+    "tax_type": "Property Tax",
+    "amount": 620.0,
+    "date": "2025-07-27T09:50:00",
+    "payment_method": "Card"
+  },
+  {
+    "id": "RCPT-00131",
+    "business_name": "Nana's Restaurant",
+    "tax_type": "Environmental Tax",
+    "amount": 460.0,
+    "date": "2025-07-27T15:40:00",
+    "payment_method": "Mobile Money"
+  },
+  {
+    "id": "RCPT-00132",
+    "business_name": "TechMate GH",
+    "tax_type": "Business Operating Permit",
+    "amount": 1000.0,
+    "date": "2025-07-26T10:20:00",
+    "payment_method": "Cash"
+  }
+]
