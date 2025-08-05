@@ -1,0 +1,64 @@
+[
+  {
+    "id": "BUS-2023-001",
+    "business_name": "Adwoa Grocery Shop",
+    "owner": "Adwoa Mensah",
+    "phone": "0244111222",
+    "address": "Central Market, Shop #45",
+    "category": "Retail",
+    "zone": "Central Market",
+    "tax_status": "Overdue",
+    "total_due": 200.0,
+    "dues": [
+      {
+        "label": "Business Operating Permit",
+        "amount": 200.0,
+        "days_overdue": 765
+      },
+      {
+        "label": "Market Stall Fee",
+        "amount": 50.0,
+        "days_overdue": 734
+      }
+    ],
+    "last_payment": "15 Jun 2022"
+  },
+  {
+    "id": "BUS-2023-002",
+    "business_name": "Afia Restaurant",
+    "owner": "Afia Owusu",
+    "phone": "0244333444",
+    "address": "High Street, Building 12",
+    "category": "Food & Beverage",
+    "zone": "High Street",
+    "tax_status": "Overdue",
+    "total_due": 150.0,
+    "dues": [
+      {
+        "label": "Food & Beverage License",
+        "amount": 150.0,
+        "days_overdue": 719
+      }
+    ],
+    "last_payment": "15 Aug 2022"
+  },
+  {
+    "id": "BUS-2023-003",
+    "business_name": "Ama Fashion Boutique",
+    "owner": "Ama Darko",
+    "phone": "0244555666",
+    "address": "Shopping Mall, Shop #23",
+    "category": "Clothing & Apparel",
+    "zone": "Shopping Mall",
+    "tax_status": "Overdue",
+    "total_due": 75.0,
+    "dues": [
+      {
+        "label": "Signage Fee",
+        "amount": 75.0,
+        "days_overdue": 750
+      }
+    ],
+    "last_payment": "15 Jul 2022"
+  }
+]

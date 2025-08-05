@@ -79,12 +79,12 @@ const RecentCollections = () => {
           View All
         </Link>
       </div>
-      <div className="bg-white overflow-hidden shadow-sm rounded-lg border border-gray-200">
+      <div className="bg-white overflow-x-scroll shadow-sm rounded-lg border border-gray-200">
         <div className="overflow-x-auto">
           <table className="min-w-full divide-y divide-gray-200 text-sm">
             <thead className="bg-gray-50">
               <tr>
-                <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Receipt ID</th>
+                <th scope="col" className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Receipt ID</th>
                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Business</th>
                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Tax Type</th>
                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase">Amount</th>

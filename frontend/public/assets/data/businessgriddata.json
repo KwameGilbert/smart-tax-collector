@@ -1,0 +1,72 @@
+[
+  {
+    "id": "BUS-001",
+    "name": "Kofi Ventures",
+    "owner": "Kofi Asare",
+    "category": "Retail",
+    "location": "Asawinso Main Road",
+    "phone": "+233 24 123 4567",
+    "tax_balance": 320.5,
+    "last_payment": "2025-07-15",
+    "taxes_due": [
+      { "name": "Property Tax", "amount": 150.0, "due_date": "2025-07-01" },
+      { "name": "Business Levy", "amount": 170.5, "due_date": "2025-08-10" }
+    ]
+  },
+  {
+    "id": "BUS-002",
+    "name": "Ama Foods",
+    "owner": "Ama Serwaa",
+    "category": "Food & Beverage",
+    "location": "Opp. Old Post Office",
+    "phone": "+233 26 987 6543",
+    "tax_balance": 210.0,
+    "last_payment": "2025-07-25",
+    "taxes_due": [
+      { "name": "Food License", "amount": 100.0, "due_date": "2025-08-05" },
+      { "name": "Health Permit", "amount": 110.0, "due_date": "2025-08-12" }
+    ]
+  },
+  {
+    "id": "BUS-003",
+    "name": "Kwabena Motors",
+    "owner": "Kwabena Mensah",
+    "category": "Automobile",
+    "location": "Near Sefwi SHS",
+    "phone": "+233 20 321 8765",
+    "tax_balance": 450.0,
+    "last_payment": "2025-06-30",
+    "taxes_due": [
+      { "name": "Garage Tax", "amount": 250.0, "due_date": "2025-07-15" },
+      { "name": "Signboard Levy", "amount": 200.0, "due_date": "2025-08-20" }
+    ]
+  },
+  {
+    "id": "BUS-004",
+    "name": "Sarah Boutique",
+    "owner": "Sarah Konadu",
+    "category": "Fashion",
+    "location": "Market Street",
+    "phone": "+233 54 789 0123",
+    "tax_balance": 180.75,
+    "last_payment": "2025-07-18",
+    "taxes_due": [
+      { "name": "Display Levy", "amount": 80.75, "due_date": "2025-07-20" },
+      { "name": "Vendor License", "amount": 100.0, "due_date": "2025-08-10" }
+    ]
+  },
+  {
+    "id": "BUS-005",
+    "name": "TechMax Solutions",
+    "owner": "Yaw Owusu",
+    "category": "Technology",
+    "location": "Sefwi Roundabout",
+    "phone": "+233 55 123 4567",
+    "tax_balance": 600.0,
+    "last_payment": "2025-07-05",
+    "taxes_due": [
+      { "name": "ICT Levy", "amount": 300.0, "due_date": "2025-07-10" },
+      { "name": "Electronic Waste Fee", "amount": 300.0, "due_date": "2025-08-15" }
+    ]
+  }
+]

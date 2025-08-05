@@ -11,6 +11,8 @@ import CollectorsManagement from "./pages/financial/CollectorsManagement";
 import FinanceLogin from "./pages/financial/Login";
 import CollectorsMainLayout from "./components/collector/layout/MainLayout";
 import CollectorDashboard from "./pages/collector/Dashboard";
+import SearchBusiness from "./pages/collector/SearchBusiness";
+
 function App() {
   return (
     <BrowserRouter>
@@ -30,6 +32,7 @@ function App() {
         {/* collectors Dashboard */}
         <Route path="/collector" element={<CollectorsMainLayout/>}>
           <Route index element={<CollectorDashboard/>}/>
+          <Route path="search-business" element={<SearchBusiness/>}/>
         </Route>
       </Routes>
     </BrowserRouter>

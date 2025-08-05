@@ -4,8 +4,8 @@ import CollectorMetricCards from "../../components/collector/DashboardMetricsCar
 import QuickActions from "../../components/collector/QuickActions";
 import TaxTypes from "../../components/collector/TaxTypes";
 import TopCollectionAreas from "../../components/collector/TopCollectionsArea";
-import DonutChart from "../../../public/assets/data/TopCollectionsDognut";
-import RecentCollections from "../../components/collector/RecentCollection";
+import DonutChart from "../../components/collector/TopCollectionsDognut";
+//import RecentCollections from "../../components/collector/RecentCollection";
 
 const CollectorDashboard = () => {
   return (
@@ -25,18 +25,16 @@ const CollectorDashboard = () => {
         </div>
 
         <div className="flex items-start gap-5 flex-col md:flex-row">
-            <TaxTypes />
-            <div className="bg-white p-6 rounded shadow flex-[1.2] h-full">
-            <TopCollectionAreas/>
-           <div className="my-5">
-           <DonutChart/>
-           </div>
+          <TaxTypes />
+          <div className="bg-white p-6 rounded shadow md:flex-[1.2] h-full w-full md:w-[80%]">
+            <TopCollectionAreas />
+            <div className="my-5">
+              <DonutChart />
             </div>
+          </div>
         </div>
 
-        <div>
-          <RecentCollections/>
-        </div>
+        <div>{/* <RecentCollections/> */}</div>
       </main>
     </div>
   );
