@@ -12,6 +12,7 @@ import FinanceLogin from "./pages/financial/Login";
 import CollectorsMainLayout from "./components/collector/layout/MainLayout";
 import CollectorDashboard from "./pages/collector/Dashboard";
 import SearchBusiness from "./pages/collector/SearchBusiness";
+import CollectPayment from "./pages/collector/CollectPayment";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/finance-login" element={<FinanceLogin/>}/>
+        {/* THis is the finance dashboard */}
         <Route path="/finance" element={<FinanceMainLayout/>}>
           <Route index element={<FinanceDashboard/>} />
           <Route path="business-registry" element={<BusinessRegistry/>} />
@@ -33,6 +35,7 @@ function App() {
         <Route path="/collector" element={<CollectorsMainLayout/>}>
           <Route index element={<CollectorDashboard/>}/>
           <Route path="search-business" element={<SearchBusiness/>}/>
+          <Route path="collect-payment" element={<CollectPayment/>}/>
         </Route>
       </Routes>
     </BrowserRouter>

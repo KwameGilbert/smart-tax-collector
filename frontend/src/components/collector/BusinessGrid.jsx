@@ -190,7 +190,7 @@ const BusinessGrid = () => {
                   {new Date(business.last_payment).toLocaleDateString()}
                 </span>
                 <Link
-                  to={`collect-payment?business_id=${business.id}`}
+                  to={`/collector/collect-payment?business_id=${business.id}`}
                   className="px-3 py-1 bg-green-600 text-white text-sm font-medium rounded-md hover:bg-green-700 transition-colors"
                 >
                   Collect <RiArrowRightLine className="inline ml-1" />
