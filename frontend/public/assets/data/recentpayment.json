@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "business_name": "Afriyie Ventures",
+    "tax_type": "Income Tax",
+    "payment_date": "2025-07-29",
+    "amount_paid": 1200.00,
+    "payment_method": "cash",
+    "payment_method_label": "Cash"
+  },
+  {
+    "id": 2,
+    "business_name": "Global Traders",
+    "tax_type": "VAT",
+    "payment_date": "2025-07-27",
+    "amount_paid": 850.50,
+    "payment_method": "momo",
+    "payment_method_label": "Mobile Money"
+  },
+  {
+    "id": 3,
+    "business_name": "Kofi Tech Solutions",
+    "tax_type": "Property Tax",
+    "payment_date": "2025-07-25",
+    "amount_paid": 450.00,
+    "payment_method": "card",
+    "payment_method_label": "Card"
+  },
+  {
+    "id": 4,
+    "business_name": "Elite Supplies Ltd.",
+    "tax_type": "Income Tax",
+    "payment_date": "2025-07-24",
+    "amount_paid": 1500.00,
+    "payment_method": "momo",
+    "payment_method_label": "Mobile Money"
+  },
+  {
+    "id": 5,
+    "business_name": "Accra Goods",
+    "tax_type": "Business Levy",
+    "payment_date": "2025-07-22",
+    "amount_paid": 300.00,
+    "payment_method": "cash",
+    "payment_method_label": "Cash"
+  },
+  {
+    "id": 6,
+    "business_name": "Zoom Printing",
+    "tax_type": "VAT",
+    "payment_date": "2025-07-21",
+    "amount_paid": 920.75,
+    "payment_method": "card",
+    "payment_method_label": "Card"
+  },
+  {
+    "id": 7,
+    "business_name": "Dream Foods",
+    "tax_type": "Property Tax",
+    "payment_date": "2025-07-19",
+    "amount_paid": 600.00,
+    "payment_method": "momo",
+    "payment_method_label": "Mobile Money"
+  },
+  {
+    "id": 8,
+    "business_name": "Ultimate ICT Hub",
+    "tax_type": "VAT",
+    "payment_date": "2025-07-17",
+    "amount_paid": 1350.00,
+    "payment_method": "cash",
+    "payment_method_label": "Cash"
+  },
+  {
+    "id": 9,
+    "business_name": "Modern Artistry",
+    "tax_type": "Business Levy",
+    "payment_date": "2025-07-15",
+    "amount_paid": 410.25,
+    "payment_method": "card",
+    "payment_method_label": "Card"
+  },
+  {
+    "id": 10,
+    "business_name": "Green Earth Builders",
+    "tax_type": "Income Tax",
+    "payment_date": "2025-07-13",
+    "amount_paid": 950.00,
+    "payment_method": "momo",
+    "payment_method_label": "Mobile Money"
+  }
+]

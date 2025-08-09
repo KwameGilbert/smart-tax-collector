@@ -1,0 +1,27 @@
+
+{
+  "status": "success",
+  "stat": [
+    {
+      "id": 1,
+      "title": "Total Revenue",
+      "value": 10
+    },
+    {
+      "id": 2,
+      "title": "Tax Payers",
+      "value": 2
+    },
+    {
+      "id": 3,
+      "title": "Collection Rate",
+      "value": 100
+    },
+    {
+      "id": 4,
+      "title": "Overdue Taxes",
+      "value": 50
+    }
+  ],
+  "message": "Loaded successfully"
+}

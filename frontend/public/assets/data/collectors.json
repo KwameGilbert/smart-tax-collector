@@ -1,0 +1,110 @@
+[
+  {
+    "name": "John Anane",
+    "location": "Central Market",
+    "status": "Active",
+    "today": { "amount": "GHS 650.00", "count": 4 },
+    "week": { "amount": "GHS 3,750.00", "count": 23 },
+    "month": { "amount": "GHS 12,480.00", "count": 87 },
+    "online": true,
+    "performance": "High",
+    "lastCollection": "2 hours ago",
+    "viewUrl": "view.html"
+  },
+  {
+    "name": "Ama Serwaa",
+    "location": "Market Square",
+    "status": "Inactive",
+    "today": { "amount": "GHS 0.00", "count": 0 },
+    "week": { "amount": "GHS 2,100.00", "count": 14 },
+    "month": { "amount": "GHS 9,340.00", "count": 66 },
+    "online": false,
+    "performance": "Average",
+    "lastCollection": "Yesterday",
+    "viewUrl": "view.html"
+  },
+  {
+    "name": "Kwame Boateng",
+    "location": "Takoradi Circle",
+    "status": "Active",
+    "today": { "amount": "GHS 420.00", "count": 3 },
+    "week": { "amount": "GHS 2,900.00", "count": 19 },
+    "month": { "amount": "GHS 10,100.00", "count": 75 },
+    "online": true,
+    "performance": "Moderate",
+    "lastCollection": "1 hour ago",
+    "viewUrl": "view.html"
+  },
+  {
+    "name": "Afia Nyarko",
+    "location": "Makola Market",
+    "status": "Active",
+    "today": { "amount": "GHS 1,050.00", "count": 7 },
+    "week": { "amount": "GHS 4,350.00", "count": 26 },
+    "month": { "amount": "GHS 13,700.00", "count": 94 },
+    "online": true,
+    "performance": "High",
+    "lastCollection": "30 mins ago",
+    "viewUrl": "view.html"
+  },
+  {
+    "name": "Kojo Mensah",
+    "location": "Sunyani Town Center",
+    "status": "Inactive",
+    "today": { "amount": "GHS 100.00", "count": 1 },
+    "week": { "amount": "GHS 1,200.00", "count": 9 },
+    "month": { "amount": "GHS 7,860.00", "count": 60 },
+    "online": false,
+    "performance": "Low",
+    "lastCollection": "3 days ago",
+    "viewUrl": "view.html"
+  },
+  {
+    "name": "Yaw Osei",
+    "location": "Tema Community 1",
+    "status": "Active",
+    "today": { "amount": "GHS 500.00", "count": 5 },
+    "week": { "amount": "GHS 3,500.00", "count": 24 },
+    "month": { "amount": "GHS 11,900.00", "count": 83 },
+    "online": true,
+    "performance": "High",
+    "lastCollection": "4 hours ago",
+    "viewUrl": "view.html"
+  },
+  {
+    "name": "Akosua Dede",
+    "location": "Kasoa Market",
+    "status": "Active",
+    "today": { "amount": "GHS 300.00", "count": 2 },
+    "week": { "amount": "GHS 2,800.00", "count": 18 },
+    "month": { "amount": "GHS 9,800.00", "count": 69 },
+    "online": false,
+    "performance": "Average",
+    "lastCollection": "5 hours ago",
+    "viewUrl": "view.html"
+  },
+  {
+    "name": "Daniel Asare",
+    "location": "Ho Central",
+    "status": "Active",
+    "today": { "amount": "GHS 780.00", "count": 6 },
+    "week": { "amount": "GHS 3,100.00", "count": 22 },
+    "month": { "amount": "GHS 10,450.00", "count": 78 },
+    "online": true,
+    "performance": "High",
+    "lastCollection": "1 hour ago",
+    "viewUrl": "view.html"
+  },
+  {
+    "name": "Naana Adjei",
+    "location": "Tamale Market",
+    "status": "Active",
+    "today": { "amount": "GHS 350.00", "count": 3 },
+    "week": { "amount": "GHS 2,450.00", "count": 17 },
+    "month": { "amount": "GHS 8,900.00", "count": 65 },
+    "online": true,
+    "performance": "Moderate",
+    "lastCollection": "Today",
+    "viewUrl": "view.html"
+  }
+]

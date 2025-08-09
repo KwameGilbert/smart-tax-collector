@@ -1,0 +1,18 @@
+[
+  {
+    "name": "Business Permit",
+    "amount": 15600
+  },
+  {
+    "name": "Market Fee",
+    "amount": 9200
+  },
+  {
+    "name": "Signage",
+    "amount": 6800
+  },
+  {
+    "name": "Sanitation Levy",
+    "amount": 5400
+  }
+]

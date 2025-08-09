@@ -1,0 +1,9 @@
+[
+  { "month": "Jan", "amount": 4520 },
+  { "month": "Feb", "amount": 5280 },
+  { "month": "Mar", "amount": 5960 },
+  { "month": "Apr", "amount": 4890 },
+  { "month": "May", "amount": 6230 },
+  { "month": "Jun", "amount": 5700 },
+  { "month": "Jul", "amount": 3800 }
+]

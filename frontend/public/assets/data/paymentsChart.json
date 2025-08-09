@@ -1,0 +1,21 @@
+{
+  "monthlyRevenue": {
+    "Jan": 12500,
+    "Feb": 15200,
+    "Mar": 18000,
+    "Apr": 16800,
+    "May": 19200,
+    "Jun": 21500,
+    "Jul": 17800,
+    "Aug": 0,
+    "Sep": 0,
+    "Oct": 0,
+    "Nov": 0,
+    "Dec": 0
+  },
+  "paymentMethods": {
+    "Cash": 3,
+    "Mobile Money": 4,
+    "Bank Transfer": 3
+  }
+}

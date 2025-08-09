@@ -1,0 +1,18 @@
+[
+  {
+    "label": "Total Revenue",
+    "value": "GHS 1,655.00"
+  },
+  {
+    "label": "Confirmed Payments",
+    "value": "8"
+  },
+  {
+    "label": "Pending Payments",
+    "value": "1"
+  },
+  {
+    "label": "Cancelled Payments",
+    "value": "1"
+  }
+]
