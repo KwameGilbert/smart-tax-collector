@@ -1,8 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { navLinks } from "../../../public/assets/data/NavLink";
 
 const FinanceSidebar = (probs) => {
+  const location = useLocation();
   return (
     <div
       className={`bg-blue-50 text-slate-700 h-screen flex-col justify-between duration-700 hidden md:flex ${
@@ -12,7 +13,7 @@ const FinanceSidebar = (probs) => {
       {/* header */}
       <div className="p-4 mt-5">
         <div className="flex items-center gap-3">
-          <h1 class="text-xl font-semibold">Finance Portal</h1>
+          <h1 className="text-xl font-semibold">Finance Portal</h1>
         </div>
       </div>
 
@@ -28,22 +29,26 @@ const FinanceSidebar = (probs) => {
                 </h3>
               )}
               <nav className="space-y-4">
-                {item.menuItems.map((menuItem, idx) => (
-                  <Link
-                    key={idx}
-                    to={menuItem.to}
-                    className={`flex items-center py-2 px-3 rounded-md  gap-3 ${
-                      window.location.pathname === menuItem.to
-                        ? "bg-blue-600 text-white font-medium"
-                        : "text-gray-600 hover:bg-blue-100"
-                    }`}
-                  >
-                    <menuItem.icon size={20} />
-                    {probs.showLabels && (
-                      <span className="text-md">{menuItem.label}</span>
-                    )}
-                  </Link>
-                ))}
+                {item.menuItems.map((menuItem, idx) => {
+                  // Use location.pathname for active state (updates immediately on navigation)
+                  const isActive = location.pathname === menuItem.to || location.pathname.endsWith(menuItem.to);
+                  return (
+                    <Link
+                      key={idx}
+                      to={menuItem.to}
+                      className={`flex items-center py-2 px-3 rounded-md gap-3 ${
+                        isActive
+                          ? "bg-blue-600 text-white font-medium shadow"
+                          : "text-gray-600 hover:bg-blue-100"
+                      }`}
+                    >
+                      <menuItem.icon size={20} />
+                      {probs.showLabels && (
+                        <span className="text-md">{menuItem.label}</span>
+                      )}
+                    </Link>
+                  );
+                })}
               </nav>
             </div>
           </div>
@@ -51,22 +56,22 @@ const FinanceSidebar = (probs) => {
       </div>
 
       <footer>
-        <div class="mt-auto pt-4 border-t border-gray-200">
-          <div class="text-center py-2 text-xs text-gray-500">
+        <div className="mt-auto pt-4 border-t border-gray-200">
+          <div className="text-center py-2 text-xs text-gray-500">
             <span>Developed by</span>
             <a
               href="tel:+233541436414"
-              class="mx-1 font-medium inline-flex items-center group"
+              className="mx-1 font-medium inline-flex items-center group"
             >
-              <span class="text-blue-600 group-hover:text-blue-700 transition-colors">
+              <span className="text-blue-600 group-hover:text-blue-700 transition-colors">
                 Gilbert Elikplim Kukah
               </span>
-              <i class="ri-arrow-right-up-line ml-0.5 opacity-0 group-hover:opacity-100 transition-opacity"></i>
+              <i className="ri-arrow-right-up-line ml-0.5 opacity-0 group-hover:opacity-100 transition-opacity"></i>
             </a>
-            <span class="px-1 text-gray-300">|</span>
+            <span className="px-1 text-gray-300">|</span>
             <a
               href="tel:+233541436414"
-              class="hover:text-blue-600 transition-colors"
+              className="hover:text-blue-600 transition-colors"
             >
               0541436414
             </a>

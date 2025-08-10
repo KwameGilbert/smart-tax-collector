@@ -15,6 +15,8 @@ import SearchBusiness from "./pages/collector/SearchBusiness";
 import CollectPayment from "./pages/collector/CollectPayment";
 import Reports from "./pages/financial/Reports";
 import Settings from "./pages/financial/Settings";
+import Performance from "./pages/collector/Performance";
+import CollectorSettingsPage from "./pages/collector/Settings";
 
 function App() {
   return (
@@ -49,6 +51,8 @@ function App() {
           <Route index element={<CollectorDashboard />} />
           <Route path="search-business" element={<SearchBusiness />} />
           <Route path="collect-payment" element={<CollectPayment />} />
+          <Route path="performance" element={<Performance />} />
+          <Route path="settings" element={<CollectorSettingsPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

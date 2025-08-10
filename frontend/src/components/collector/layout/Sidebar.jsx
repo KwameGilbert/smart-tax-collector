@@ -1,10 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { collectorsNavLinks } from "./CollectorNavLink";
 import "remixicon/fonts/remixicon.css";
 import { LogOut } from "lucide-react";
 
 const CollectorSidebar = (probs) => {
+  const location = useLocation();
   return (
     <div
       className={`bg-white text-slate-700 h-screen flex-col justify-between duration-700 hidden md:flex ${
@@ -46,22 +47,25 @@ const CollectorSidebar = (probs) => {
                 </h3>
               )}
               <nav className="space-y-4">
-                {item.menuItems.map((menuItem, idx) => (
-                  <Link
-                    key={idx}
-                    to={menuItem.to}
-                    className={`flex items-center py-2 px-3 rounded-md  gap-3 ${
-                      window.location.pathname === menuItem.to
-                        ? "bg-green-100 text-green-600 font-medium"
-                        : "text-gray-600 hover:bg-green-100"
-                    }`}
-                  >
-                    <menuItem.icon size={20} />
-                    {probs.showLabels && (
-                      <span className="text-md">{menuItem.label}</span>
-                    )}
-                  </Link>
-                ))}
+                {item.menuItems.map((menuItem, idx) => {
+                  const isActive = location.pathname === menuItem.to || location.pathname.endsWith(menuItem.to);
+                  return (
+                    <Link
+                      key={idx}
+                      to={menuItem.to}
+                      className={`flex items-center py-2 px-3 rounded-md gap-3 ${
+                        isActive
+                          ? "bg-green-100 text-green-600 font-medium"
+                          : "text-gray-600 hover:bg-green-100"
+                      }`}
+                    >
+                      <menuItem.icon size={20} />
+                      {probs.showLabels && (
+                        <span className="text-md">{menuItem.label}</span>
+                      )}
+                    </Link>
+                  );
+                })}
               </nav>
             </div>
           </div>

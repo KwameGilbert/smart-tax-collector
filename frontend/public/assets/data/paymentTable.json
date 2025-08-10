@@ -1,8 +1,8 @@
 [
   {
     "receiptNo": "RCP-2023-1001",
-    "business": "Adwoa Grocery Shop",
-    "taxType": "Business Operating Permit",
+    "business": "Grocery Shop",
+    "taxType": "Business  ",
     "amount": "GHS 200.00",
     "date": "12 Jul, 2023",
     "method": "Cash",
@@ -12,7 +12,7 @@
   {
     "receiptNo": "RCP-2023-1002",
     "business": "Kofi Auto Repairs",
-    "taxType": "Business Operating Permit",
+    "taxType": "Business",
     "amount": "GHS 250.00",
     "date": "11 Jul, 2023",
     "method": "Mobile Money",
@@ -22,7 +22,7 @@
   {
     "receiptNo": "RCP-2023-1003",
     "business": "Afia Restaurant",
-    "taxType": "Food & Beverage License",
+    "taxType": "Food & Beverage ",
     "amount": "GHS 350.00",
     "date": "10 Jul, 2023",
     "method": "Bank Transfer",

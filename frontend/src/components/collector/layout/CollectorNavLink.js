@@ -1,4 +1,4 @@
-import { Settings, Bell, Building2, ChartNoAxesColumn, CircleDollarSign } from "lucide-react";
+import { Settings, Bell, Building2, ChartNoAxesColumn, CircleDollarSign, Trophy } from "lucide-react";
 
 export const collectorsNavLinks = [
   {
@@ -8,7 +8,8 @@ export const collectorsNavLinks = [
       { icon: Building2, label: "Search Business", to: "search-business" },
       { icon: Bell, label: "My Collections", to: "collections" },
       { icon: CircleDollarSign, label: "Performance", to: "performance" },
-      { icon: Settings, label: "Settings", to: "/calendar" },
+      { icon: Trophy, label: "Leaderboard", to: "leaderboard" },
+      { icon: Settings, label: "Settings", to: "settings" },
     ],
   },
 ];
