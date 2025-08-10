@@ -17,6 +17,8 @@ import Reports from "./pages/financial/Reports";
 import Settings from "./pages/financial/Settings";
 import Performance from "./pages/collector/Performance";
 import CollectorSettingsPage from "./pages/collector/Settings";
+import Leaderboard from "./pages/collector/Leaderboard";
+import Collections from "./pages/collector/Collections";
 
 function App() {
   return (
@@ -53,6 +55,8 @@ function App() {
           <Route path="collect-payment" element={<CollectPayment />} />
           <Route path="performance" element={<Performance />} />
           <Route path="settings" element={<CollectorSettingsPage />} />
+          <Route path="leaderboard" element={<Leaderboard />} />
+          <Route path="collections" element={<Collections />} />
         </Route>
       </Routes>
     </BrowserRouter>
