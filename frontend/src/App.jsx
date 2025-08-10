@@ -13,29 +13,42 @@ import CollectorsMainLayout from "./components/collector/layout/MainLayout";
 import CollectorDashboard from "./pages/collector/Dashboard";
 import SearchBusiness from "./pages/collector/SearchBusiness";
 import CollectPayment from "./pages/collector/CollectPayment";
+import Reports from "./pages/financial/Reports";
+import Settings from "./pages/financial/Settings";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/finance-login" element={<FinanceLogin/>}/>
+        <Route path="/" element={<Home />} />
+        <Route path="/finance-login" element={<FinanceLogin />} />
         {/* THis is the finance dashboard */}
-        <Route path="/finance" element={<FinanceMainLayout/>}>
-          <Route index element={<FinanceDashboard/>} />
-          <Route path="business-registry" element={<BusinessRegistry/>} />
-          <Route path="business-registry/view-registered-business/:id" element={<ViewRegisteredBusiness/>} />
-          <Route path="business-registry-forms" element={<RegisterBusinessForm/>} />
-          <Route path="notification-center" element={<Notification/>} />
-          <Route path="payment-management" element={<PaymentManagement/>}/>
-          <Route path="collectors-management" element={<CollectorsManagement/>}/>
+        <Route path="/finance" element={<FinanceMainLayout />}>
+          <Route index element={<FinanceDashboard />} />
+          <Route path="business-registry" element={<BusinessRegistry />} />
+          <Route
+            path="business-registry/view-registered-business/:id"
+            element={<ViewRegisteredBusiness />}
+          />
+          <Route
+            path="business-registry-forms"
+            element={<RegisterBusinessForm />}
+          />
+          <Route path="notification-center" element={<Notification />} />
+          <Route path="payment-management" element={<PaymentManagement />} />
+          <Route
+            path="collectors-management"
+            element={<CollectorsManagement />}
+          />
+          <Route path="reports" element={<Reports />} />
+          <Route path="settings" element={<Settings />} />
         </Route>
 
         {/* collectors Dashboard */}
-        <Route path="/collector" element={<CollectorsMainLayout/>}>
-          <Route index element={<CollectorDashboard/>}/>
-          <Route path="search-business" element={<SearchBusiness/>}/>
-          <Route path="collect-payment" element={<CollectPayment/>}/>
+        <Route path="/collector" element={<CollectorsMainLayout />}>
+          <Route index element={<CollectorDashboard />} />
+          <Route path="search-business" element={<SearchBusiness />} />
+          <Route path="collect-payment" element={<CollectPayment />} />
         </Route>
       </Routes>
     </BrowserRouter>

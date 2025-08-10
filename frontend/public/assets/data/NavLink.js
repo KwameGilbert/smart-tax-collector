@@ -19,8 +19,8 @@ export const navLinks = [
       { icon: Bell, label: "Notification Center", to: "notification-center" },
       { icon: CircleDollarSign, label: "Payments", to: "payment-management" },
       { icon: UserStar, label: "Tax Collectors", to: "collectors-management" },
-      { icon: FileChartColumn, label: "Reports", to: "/calender" },
-      { icon: Settings, label: "Settings", to: "/calender" },
+      { icon: FileChartColumn, label: "Reports", to: "reports" },
+      { icon: Settings, label: "Settings", to: "settings" },
     ],
   },
 ];
