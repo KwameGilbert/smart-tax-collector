@@ -87,7 +87,7 @@ const RecentPayments = () => {
                   </span>
                 </td>
                 <td className="px-4 py-4 whitespace-nowrap flex items-center gap-3">
-                  <Link to={`/view/${payment.id}`}><FaEye className="text-blue-600 text-sm hover:text-blue-800 cursor-pointer" /></Link>
+                  <Link to={`/finance/recent-payments/${payment.id}`}><FaEye className="text-blue-600 text-sm hover:text-blue-800 cursor-pointer" /></Link>
                   <Link to={`/edit/${payment.id}`}><FaEdit className="text-green-600 text-sm hover:text-green-800 cursor-pointer" /></Link>
                   <FaTrash
                     className="text-red-600 text-sm hover:text-red-800 cursor-pointer"

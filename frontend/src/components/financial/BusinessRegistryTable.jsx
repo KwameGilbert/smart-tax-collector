@@ -130,7 +130,7 @@ const BusinessTable = () => {
                       <RiEyeLine />
                     </Link>
                     <Link
-                      to={`/businesses/edit/${b.id}`}
+                      to={`edit/${b.id}`}
                       className="text-lg text-indigo-600 hover:text-indigo-800"
                     >
                       <RiPencilLine />

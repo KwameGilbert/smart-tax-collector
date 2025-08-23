@@ -22,21 +22,21 @@ const PaymentsTable = () => {
       });
   }, []);
 
-  const handleDelete = (receiptNo) => {
-    Swal.fire({
-      title: "Are you sure?",
-      text: `You are about to delete ${receiptNo}`,
-      icon: "warning",
-      showCancelButton: true,
-      confirmButtonColor: "#e3342f",
-      confirmButtonText: "Yes, delete it!",
-    }).then((result) => {
-      if (result.isConfirmed) {
-        setPayments(payments.filter((item) => item.receiptNo !== receiptNo));
-        Swal.fire("Deleted!", "Payment has been deleted.", "success");
-      }
-    });
-  };
+  // const handleDelete = (receiptNo) => {
+  //   Swal.fire({
+  //     title: "Are you sure?",
+  //     text: `You are about to delete ${receiptNo}`,
+  //     icon: "warning",
+  //     showCancelButton: true,
+  //     confirmButtonColor: "#e3342f",
+  //     confirmButtonText: "Yes, delete it!",
+  //   }).then((result) => {
+  //     if (result.isConfirmed) {
+  //       setPayments(payments.filter((item) => item.receiptNo !== receiptNo));
+  //       Swal.fire("Deleted!", "Payment has been deleted.", "success");
+  //     }
+  //   });
+  // };
 
   if (loading) return <p className="p-6">Loading payments...</p>;
 
@@ -96,16 +96,16 @@ const PaymentsTable = () => {
                     className="cursor-pointer text-blue-600 hover:scale-110"
                     size={18}
                   />
-                  <Edit
+                  {/* <Edit
                     onClick={() => navigate(`/payments/edit/${item.receiptNo}`)}
                     className="cursor-pointer text-yellow-500 hover:scale-110"
                     size={18}
-                  />
-                  <Trash2
+                  /> */}
+                  {/* <Trash2
                     onClick={() => handleDelete(item.receiptNo)}
                     className="cursor-pointer text-red-500 hover:scale-110"
                     size={18}
-                  />
+                  /> */}
                 </td>
               </tr>
             ))}

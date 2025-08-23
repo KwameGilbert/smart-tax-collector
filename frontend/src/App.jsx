@@ -1,3 +1,6 @@
+import EditBusinessRegistry from "./pages/financial/EditBusinessRegistry";
+import CollectorsManagementView from "./pages/financial/view-pages/CollectorsManagementView";
+import PaymentsView from "./pages/financial/view-pages/PaymentsView";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import FinanceMainLayout from "./components/layout/MainLayout";
 import FinanceDashboard from "./pages/financial/Dashboard";
@@ -10,6 +13,7 @@ import PaymentManagement from "./pages/financial/PaymentManagement";
 import CollectorsManagement from "./pages/financial/CollectorsManagement";
 import FinanceLogin from "./pages/financial/Login";
 import CollectorsMainLayout from "./components/collector/layout/MainLayout";
+import ViewTaxpayers from "./pages/collector/ViewTaxpayers";
 import CollectorDashboard from "./pages/collector/Dashboard";
 import SearchBusiness from "./pages/collector/SearchBusiness";
 import CollectPayment from "./pages/collector/CollectPayment";
@@ -19,6 +23,10 @@ import Performance from "./pages/collector/Performance";
 import CollectorSettingsPage from "./pages/collector/Settings";
 import Leaderboard from "./pages/collector/Leaderboard";
 import Collections from "./pages/collector/Collections";
+import RecentPaymentsView from "./pages/financial/view-pages/RecentPaymentsView";
+import RecentPayments from "./components/financial/RecentPayment";
+import ExcutiveMainLayout from "./components/executive/layout/MainLayout";
+import ExecutiveDashboard from "./pages/executive/Dashboard";
 
 function App() {
   return (
@@ -27,6 +35,15 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/finance-login" element={<FinanceLogin />} />
         {/* THis is the finance dashboard */}
+        {/* Top-level route for direct access to recent payment details with sidebar/header */}
+        <Route path="/recent-payments/:id" element={<FinanceMainLayout />}>
+          <Route index element={<RecentPaymentsView />} />
+        </Route>
+        {/* Top-level route for direct access to payment details with sidebar/header */}
+        <Route path="/payments/view/:receiptNo" element={<FinanceMainLayout />}>
+          <Route index element={<PaymentsView />} />
+        </Route>
+        
         <Route path="/finance" element={<FinanceMainLayout />}>
           <Route index element={<FinanceDashboard />} />
           <Route path="business-registry" element={<BusinessRegistry />} />
@@ -46,6 +63,10 @@ function App() {
           />
           <Route path="reports" element={<Reports />} />
           <Route path="settings" element={<Settings />} />
+          <Route path="recent-payments" element={<RecentPayments />} />
+          <Route path="recent-payments/:id" element={<RecentPaymentsView />} />
+          <Route path="collectors-management/view/:id" element={<CollectorsManagementView />} />
+          <Route path="business-registry/edit/:id" element={<EditBusinessRegistry />} />
         </Route>
 
         {/* collectors Dashboard */}
@@ -57,6 +78,12 @@ function App() {
           <Route path="settings" element={<CollectorSettingsPage />} />
           <Route path="leaderboard" element={<Leaderboard />} />
           <Route path="collections" element={<Collections />} />
+          <Route path="view-taxpayers/:businessId" element={<ViewTaxpayers />} />
+        </Route>
+
+        {/* executive dashboard */}
+        <Route path="/executive" element={<ExcutiveMainLayout/>}>
+         <Route index element={<ExecutiveDashboard/>}/>
         </Route>
       </Routes>
     </BrowserRouter>

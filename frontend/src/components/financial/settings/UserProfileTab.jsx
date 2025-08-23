@@ -27,7 +27,7 @@ export default function UserProfileTab() {
   const handleChange = (e) => setUser({ ...user, [e.target.name]: e.target.value });
   const handle2FAToggle = () => setShow2FA(!show2FA);
   const handlePrivacyChange = (type) => setPrivacy({ ...privacy, [type]: !privacy[type] });
-  const handleExport = () => alert("Exported profile data!");
+  // const handleExport = () => alert("Exported profile data!");
 
   return (
     <div className="p-4 space-y-6">
@@ -40,7 +40,7 @@ export default function UserProfileTab() {
           <div className="text-sm flex items-center gap-2"><FiPhone /> {user.phone}</div>
         </div>
         <Button variant="outline" size="sm" className="flex items-center gap-2" onClick={handleEdit}><FiEdit /> Edit</Button>
-        <Button variant="outline" size="sm" className="flex items-center gap-2" onClick={handleExport}><FiDownload /> Export</Button>
+        {/* <Button variant="outline" size="sm" className="flex items-center gap-2" onClick={handleExport}><FiDownload /> Export</Button> */}
       </div>
 
       {/* Edit Form Modal */}

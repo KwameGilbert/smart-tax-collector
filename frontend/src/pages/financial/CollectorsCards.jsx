@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 const CollectorCards = () => {
   const [collectors, setCollectors] = useState([]);
@@ -104,12 +105,12 @@ const CollectorCards = () => {
                 </span>
               </div>
               <div className="flex space-x-2">
-                <a
-                  href={collector.viewUrl || "#"}
+                <Link
+                  to={`/finance/collectors-management/view/${collector.id}`}
                   className="text-sm px-3 py-1 bg-blue-100 text-blue-700 rounded-md hover:bg-blue-200"
                 >
                   View Details
-                </a>
+                </Link>
                 <button className="text-gray-400 hover:text-gray-600">
                   <i className="ri-more-2-line"></i>
                 </button>

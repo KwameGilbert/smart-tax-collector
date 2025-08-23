@@ -1,4 +1,5 @@
 import React from "react";
+import { CiExport } from "react-icons/ci";
 
 export default function CollectionsFilters({ onApply, onReset }) {
   return (
@@ -19,7 +20,7 @@ export default function CollectionsFilters({ onApply, onReset }) {
       <button className="bg-green-600 text-white px-4 py-2 rounded shadow" onClick={onApply}>Apply</button>
       <button className="bg-gray-100 text-gray-700 px-4 py-2 rounded shadow" onClick={onReset}>Reset</button>
       <button className="bg-white border px-4 py-2 rounded shadow flex items-center gap-2">
-        <span className="ri-download-2-line text-lg text-gray-500" /> Export
+        <CiExport  className="w-5 h-5 text-gray-800" /> Export
       </button>
     </div>
   );

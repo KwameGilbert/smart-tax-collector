@@ -5,9 +5,7 @@ import { Button } from "../../ui/button";
 
 const paymentMethods = [
   { name: "Cash", icon: <FiDollarSign className="text-green-600" />, color: "bg-green-100 text-green-800" },
-  { name: "MTN Mobile Money", icon: <FiPhone className="text-yellow-500" />, color: "bg-yellow-100 text-yellow-800" },
-  { name: "Vodafone Cash", icon: <FiPhone className="text-red-500" />, color: "bg-red-100 text-red-800" },
-  { name: "AirtelTigo Money", icon: <FiPhone className="text-blue-500" />, color: "bg-blue-100 text-blue-800" },
+  { name: "Mobile Money", icon: <FiPhone className="text-yellow-500" />, color: "bg-yellow-100 text-yellow-800" },
   { name: "Bank Transfer", icon: <FiDatabase className="text-indigo-600" />, color: "bg-indigo-100 text-indigo-800" },
   { name: "Card Payment", icon: <FiCreditCard className="text-purple-600" />, color: "bg-purple-100 text-purple-800" },
 ];
@@ -43,12 +41,11 @@ const paymentMethods = [
 // ];
 
 export default function PaymentMethodsTab() {
-  const [selected, setSelected] = useState(["Cash", "MTN Mobile Money", "Vodafone Cash"]);
+  const [selected, setSelected] = useState(["Cash", "Mobile Money"]);
   const [showForm, setShowForm] = useState(false);
   const [apiStatus, setApiStatus] = useState({ mtn: "Online", vodafone: "Offline", airteltigo: "Online" });
   const [auditLog, setAuditLog] = useState([
-    { action: "Enabled MTN Mobile Money", user: "Admin", date: "2025-08-01 09:00" },
-    { action: "Disabled Vodafone Cash", user: "Admin", date: "2025-08-02 10:30" },
+    { action: "Enabled Mobile Money", user: "Admin", date: "2025-08-01 09:00" },
   ]);
 
   const toggleMethod = (method) => {
