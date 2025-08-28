@@ -15,7 +15,7 @@ export default function SystemSettingsTab() {
   const [locale, setLocale] = useState("en");
   const [currency, setCurrency] = useState("GHS");
   const [notifications, setNotifications] = useState({ email: true, sms: false });
-  const [apiKey, setApiKey] = useState("sk_test_1234567890");
+  //const [apiKey, setApiKey] = useState("sk_test_1234567890");
   const [showBackupModal, setShowBackupModal] = useState(false);
   const [showRestoreModal, setShowRestoreModal] = useState(false);
 
@@ -70,7 +70,7 @@ export default function SystemSettingsTab() {
       </div>
 
       {/* Backup & Restore */}
-      <div className="bg-white rounded-lg shadow p-4 flex gap-4 items-center">
+      {/* <div className="bg-white rounded-lg shadow p-4 flex gap-4 items-center">
         <div className="flex-1">
           <h4 className="font-semibold mb-2 flex items-center gap-2"><FiDatabase /> Backup & Restore</h4>
           <div className="flex gap-2">
@@ -82,13 +82,13 @@ export default function SystemSettingsTab() {
           <h4 className="font-semibold mb-2 flex items-center gap-2"><FiKey /> API Key</h4>
           <input type="text" value={apiKey} onChange={e => setApiKey(e.target.value)} className="border rounded p-2 w-full" />
         </div>
-      </div>
+      </div> */}
 
       {/* RBAC & Security */}
-      <div className="bg-white rounded-lg shadow p-4">
+      {/* <div className="bg-white rounded-lg shadow p-4">
         <h4 className="font-semibold mb-2 flex items-center gap-2"><FiShield /> Role-Based Access Control</h4>
         <div className="text-sm">Manage user roles, permissions, and security settings. (Feature placeholder)</div>
-      </div>
+      </div> */}
 
       {/* Audit Log */}
       <div className="bg-white rounded-lg shadow p-4">

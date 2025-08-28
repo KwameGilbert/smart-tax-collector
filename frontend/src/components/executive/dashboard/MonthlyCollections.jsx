@@ -26,7 +26,7 @@ const ExecutiveMonthlyCollectionsChart = () => {
       <p className="text-sm text-gray-500 mb-5">
         Current year vs. target and previous year comparison
       </p>
-      <div className="h-80 w-full">
+      <div className="h-90 w-full">
         <ResponsiveContainer>
           <LineChart data={data}>
             <CartesianGrid strokeDasharray="3 3" stroke="#e0e0e0" />

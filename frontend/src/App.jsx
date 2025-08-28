@@ -27,6 +27,8 @@ import RecentPaymentsView from "./pages/financial/view-pages/RecentPaymentsView"
 import RecentPayments from "./components/financial/RecentPayment";
 import ExcutiveMainLayout from "./components/executive/layout/MainLayout";
 import ExecutiveDashboard from "./pages/executive/Dashboard";
+import ExecutiveReports from "./pages/executive/Reports";
+import Taxpayer from "./pages/executive/Taxpayer";
 
 function App() {
   return (
@@ -84,6 +86,8 @@ function App() {
         {/* executive dashboard */}
         <Route path="/executive" element={<ExcutiveMainLayout/>}>
          <Route index element={<ExecutiveDashboard/>}/>
+          <Route path="reports-analytics" element={<ExecutiveReports/>}/>
+          <Route path="taxpayers" element={<Taxpayer />} />
         </Route>
       </Routes>
     </BrowserRouter>

@@ -15,9 +15,8 @@ export const navLinks = [
     title: "MANAGEMENT",
     menuItems: [
       { icon: ChartNoAxesColumn, label: "Dashboard", to: "/executive" },
-      { icon: CircleDollarSign, label: "Reports", to: "revenue-reports" },
-      { icon: Bell, label: "Analytics", to: "analytics" },
-      { icon: UserStar, label: "Taxpayer", to: "collectors-management" },
+      { icon: CircleDollarSign, label: "Reports & Analytics", to: "reports-analytics" },
+      { icon: UserStar, label: "Taxpayer", to: "taxpayers" },
       { icon: FileChartColumn, label: "Department Reports", to: "department-reports" },
       { icon: Settings, label: "Settings", to: "settings" },
     ],

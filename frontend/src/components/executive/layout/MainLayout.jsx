@@ -9,7 +9,7 @@ const ExcutiveMainLayout = () => {
   const [showLabels, setShowLabels] = useState(true);
 
   return (
-    <div className='flex h-screen bg-gray-100 transition-transform duration-300 transform'>
+    <div className='flex h-screen bg-gray-50 transition-transform duration-300 transform'>
       <FinanceSidebar showLabels={showLabels}/>
 
       <div className='flex flex-col flex-grow'>

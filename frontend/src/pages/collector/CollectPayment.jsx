@@ -321,14 +321,14 @@ export default function CollectPayment() {
             <div className="mb-4">
               <div className="font-medium mb-2">Select Payment Method</div>
               <div className="flex gap-2 mb-2">
-                {["MTN Mobile Money", "Vodafone Cash", "AirtelTigo Money"].map(
+                {["Mobile Money", "Cash", "Bank"].map(
                   (method) => {
                     let iconColor = "";
-                    if (method === "MTN Mobile Money")
+                    if (method === "Mobile Money")
                       iconColor = "text-yellow-500";
-                    else if (method === "Vodafone Cash")
+                    else if (method === "Cash")
                       iconColor = "text-red-500";
-                    else if (method === "AirtelTigo Money")
+                    else if (method === "Bank")
                       iconColor = "text-blue-500";
                     return (
                       <button
